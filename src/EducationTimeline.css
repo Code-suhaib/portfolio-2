@@ -1,0 +1,77 @@
+/* src/components/EducationTimeline.css */
+.timeline-container {
+  padding: 2rem;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-left: 30px;
+  border-left: 4px solid #007bff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 5px;
+}
+
+.timeline-content {
+  padding-left: 20px;
+}
+/* src/components/EducationTimeline.css */
+.timeline-container {
+  padding: 2rem;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-left: 30px;
+  border-left: 4px solid #007bff;
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-content {
+  padding-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-dot:hover {
+  background-color: #0056b3;
+  transform: scale(1.2);
+}
